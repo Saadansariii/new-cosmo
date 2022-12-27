@@ -1,0 +1,265 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* overflow-y: hidden; */
+}
+
+html{
+    scroll-behavior: smooth;
+}
+/* varible */
+:root{
+    --primary:rgb(18, 18, 94);
+    --secondary:rgb(255, 217, 1);
+    --universal:rgb(104, 104, 231);
+}
+
+body{
+    background:var(--primary);
+    color:var(--universal) ;
+}
+
+img{
+    width: 100%;
+}
+
+li{
+    text-decoration: none;
+    list-style: none;
+}
+a{
+    border-radius: 15px;
+    padding: .3em .6em;
+    border: 1px solid var(--secondary);
+    text-decoration: none;
+    color: var(--secondary);
+    transition: .3s all;
+    display: inline-block;
+
+}
+a:hover{
+    background: var(--secondary);
+    color: var(--primary);
+}
+
+/* header */
+
+#header{
+    display: flex;
+    flex-direction: column;
+}
+.head{
+    margin-block: 1em;
+    font-size: 13px;
+    width: 60%;
+    /* border-bottom: 2px solid var(--secondary); */
+}
+.second-head{
+    display: none;
+}
+
+/* grid  */
+
+.grid{
+    align-items: center;
+    height: 35vh;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+}
+.grid .heading{
+    margin-block-start:1em;
+    margin-block-end: .5em;
+    grid-column: 1/7;
+}
+.grid .heading h1{
+    font-size: 1.2em;
+}
+.heading p{
+    margin-inline: .6em;
+    width: 80%;
+    font-size: .8em;
+}
+.grid .donut{
+    grid-column: 7/9;
+    width: 200%;
+}
+
+.heading h1, p, a{
+    margin-block:.4em;
+}
+
+/* showcase-2 */
+#showcase{
+    background:url(images/square_bg.png);
+    
+}
+.container{
+    margin-left: 1em;
+}
+.headings{
+    font-size: 13px;
+    text-align: center;
+}
+
+.project-1{
+    margin-top: 2em;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+.flex{
+    width: min(40%,200px);
+}
+.flex-1{
+    text-align: center;
+    align-items: center;
+    font-size: 14px;
+}
+
+/* showcase */
+
+.showcase-2{
+
+}
+.headers{
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+}
+.headers>div{
+    background: rgb(4, 4, 69);
+    /* border: 2px solid red; */
+}
+.grid-11{
+    text-align: center;
+    color: rgb(217, 208, 208);
+    font-size: 13px;
+    margin-top: 2em;
+    
+}
+.grid-11 h1{
+    margin-bottom: 1em;
+}
+.inner-grid-1{
+    font-size: 9px;
+    grid-column: 1/5;
+    margin: .5em;
+    margin-top: 1em;
+
+}
+.inner-grid-2{
+    font-size: 9px;
+    grid-column: 5/9;
+    margin: .5em;
+}
+.inner-grid-3{
+    font-size: 9px;
+    grid-column: 1/5;
+    margin: 0 .5em .5em .5em;
+}
+.inner-grid-4{
+    font-size: 9px;
+    grid-column: 5/9;
+    margin: .5em;
+}
+.inner-grid-1, .inner-grid-2, .inner-grid-3, .inner-grid-4 h1{
+
+}
+
+.images{
+    width: min(40%,200px);
+}
+.para{
+    margin: auto;
+    /* text-align: center; */
+    margin-top: 2em;
+    width: 90%;
+    color:var(--universal);
+}
+
+/* newslatter */
+
+#newslatter{
+    text-align: center;
+    background:rgb(4, 4, 69);
+    /* margin: 20px auto; */
+}
+.in{
+    color:rgb(217, 208, 208) ;
+    /* text-align: center; */
+}
+.headerss{
+    padding-top: 2em;
+    font-size: 19px;
+}
+.touch{
+    color: rgb(217, 208, 208);
+    /* width: 70%; */
+    /* display: block; */
+    margin: 0em 4em;
+}
+.input-1{
+    /* border: 1px solid; */
+    width: 80%;
+    max-width: 400px;
+    margin: 2em auto;
+    display: grid;
+}
+
+.button-1,.button-2,.button-3{
+    color: rgb(217, 208, 208);
+    background:rgb(4, 4, 69) ;
+    border: 2px solid var(--universal);
+    margin: .5em auto;
+    padding: .5em .5em;
+    width: min(50%,400px);
+    border-radius: 15px;
+}
+.input-1 .flare{
+    width: 40%;
+    margin:10px auto;
+    font-size: 12px;
+}
+
+/* footer */
+
+#footer{
+
+    /* height: 20vh; */
+}
+.foot{
+    /* border: 2px solid ; */
+    display: grid;
+    grid-template-columns: repeat(9,1fr);
+    height: 4em;
+    overflow: hidden;
+    background:rgb(4, 4, 69) ;
+
+}
+.class-1{
+    /* border: 2px solid; */
+    grid-column: 1/4;
+    /* width: min(100%,300px); */
+    font-size: 8px;
+}
+.class-1 .on{
+    margin-top: 1em;
+}
+.class-2{
+    height: 200%;
+    grid-column: 4/8;
+}
+.class-3{
+    margin-left: 0 auto;
+    /* border: 2px solid; */
+    grid-column: 8/10;
+}
+.class-3 .first,.second{
+    /* border: 1px solid; */
+    width: min(42%,400px);
+}
+.first{
+    margin-top: 1em;
+    margin-left: .3em;
+}
+
