@@ -245,16 +245,16 @@ a:hover{
 
 }
 .class-1{
-    /* border: 2px solid; */
     grid-column: 1/4;
     /* width: min(100%,300px); */
     font-size: 8px;
 }
 .class-1 .on{
-    margin-top: 1em;
+    margin: 1em 0em 0em auto;
+    font-size: 14px;
 }
 .class-2{
-    overflow-y: hidden;
+    /* overflow: hidden; */
     height: 200%;
     grid-column: 4/8;
 }
