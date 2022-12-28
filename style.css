@@ -254,6 +254,7 @@ a:hover{
     margin-top: 1em;
 }
 .class-2{
+    overflow-y: hidden;
     height: 200%;
     grid-column: 4/8;
 }
