@@ -48,12 +48,17 @@ a:hover{
 #header{
     display: flex;
     flex-direction: column;
+    border: 1px solid;
 }
 .head{
+    font-size: 15px;
     margin-block: 1em;
     font-size: 13px;
-    width: 60%;
+    width:min(38%,400px);
     /* border-bottom: 2px solid var(--secondary); */
+}
+.border{
+    border-bottom: 3px solid var(--secondary);
 }
 .second-head{
     display: none;
@@ -62,8 +67,9 @@ a:hover{
 /* grid  */
 
 .grid{
+    overflow-x: hidden;
     align-items: center;
-    height: 35vh;
+    height: 26vh;
     display: grid;
     grid-template-columns: repeat(8,1fr);
 }
@@ -144,7 +150,7 @@ a:hover{
     font-size: 9px;
     grid-column: 1/5;
     margin: .5em;
-    margin-top: 1em;
+    /* margin-top: 1em; */
 
 }
 .inner-grid-2{
@@ -155,16 +161,16 @@ a:hover{
 .inner-grid-3{
     font-size: 9px;
     grid-column: 1/5;
-    margin: 0 .5em .5em .5em;
+    margin:.5em;
 }
 .inner-grid-4{
     font-size: 9px;
     grid-column: 5/9;
     margin: .5em;
 }
-.inner-grid-1, .inner-grid-2, .inner-grid-3, .inner-grid-4 h1{
+/* .inner-grid-1, .inner-grid-2, .inner-grid-3, .inner-grid-4 h1{
 
-}
+} */
 
 .images{
     width: min(40%,200px);
@@ -180,8 +186,10 @@ a:hover{
 /* newslatter */
 
 #newslatter{
+    /* border: 2px solid; */
+
     text-align: center;
-    background:rgb(4, 4, 69);
+    /* background:rgb(4, 4, 69); */
     /* margin: 20px auto; */
 }
 .in{
