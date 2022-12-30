@@ -51,13 +51,13 @@ a:hover{
     border: 1px solid;
 }
 .head{
-    font-size: 15px;
     margin-block: 1em;
     font-size: 13px;
-    width:min(38%,400px);
+    width:min(40%,400px);
     /* border-bottom: 2px solid var(--secondary); */
 }
 .border{
+    font-size: 23px;
     border-bottom: 3px solid var(--secondary);
 }
 .second-head{
@@ -74,9 +74,10 @@ a:hover{
     grid-template-columns: repeat(8,1fr);
 }
 .grid .heading{
-    margin-block-start:1em;
-    margin-block-end: .5em;
+    /* margin-block-start:1em; */
+    /* margin-block-end: .5em; */
     grid-column: 1/7;
+
 }
 .grid .heading h1{
     font-size: 1.2em;
@@ -87,8 +88,9 @@ a:hover{
     font-size: .8em;
 }
 .grid .donut{
+    /* overflow-y: hidden; */
     grid-column: 7/9;
-    width: 200%;
+    width: min(200%,400px);
 }
 
 .heading h1, p, a{
@@ -108,7 +110,7 @@ a:hover{
     text-align: center;
 }
 
-.project-1{
+.project-1,.project-2,.project-3{
     margin-top: 2em;
     display: flex;
     align-items: center;
@@ -137,14 +139,18 @@ a:hover{
     /* border: 2px solid red; */
 }
 .grid-11{
+    margin: auto;
     text-align: center;
     color: rgb(217, 208, 208);
     font-size: 13px;
     margin-top: 2em;
     
 }
-.grid-11 h1{
-    margin-bottom: 1em;
+.things{
+    margin-block: 1em;
+    font-size: 20px;
+    font-weight: 900;
+
 }
 .inner-grid-1{
     font-size: 9px;
@@ -240,7 +246,7 @@ a:hover{
     display: grid;
     grid-template-columns: repeat(9,1fr);
     height: 4em;
-    overflow: hidden;
+    overflow-y: hidden;
     background:rgb(4, 4, 69) ;
 
 }
@@ -264,7 +270,7 @@ a:hover{
     grid-column: 8/10;
 }
 .class-3 .first,.second{
-    /* border: 1px solid; */
+    border: 1px solid;
     width: min(42%,400px);
 }
 .first{
@@ -272,3 +278,148 @@ a:hover{
     margin-left: .3em;
 }
 
+/* meadia quary */
+
+@media(min-width:350px){
+    #header{
+
+    }
+    #header .head{
+        font-size: 5px;
+    }
+}
+
+@media (min-width:600px){
+    .container{
+        max-width: 700px;
+    }
+    .head{
+        font-size: 18px;
+        width: 35%;
+    }
+    .border{
+        font-size: 28px;
+        /* border: 2px solid white; */
+        max-width:260px;
+    }
+    #showcase{
+        /* border: 4px solid black; */
+        height: 40vh;
+    }
+    .grid{
+        /* border: 2px solid; */
+        /* height: 40vh; */
+        display: flex;
+    }
+    .grid .heading{
+        width: 100%;
+        /* border: 2px solid; */
+    }
+    .grid .donut{
+        margin: auto 0;
+        /* border: 2px solid ; */
+        width: 80%;
+        max-width: 300px;
+    }
+    /* showcase-1 */
+
+    #showcase-1{
+        /* border: 4px solid white; */
+        /* justify-content: center; */
+        /* align-items: center; */
+        /* text-align: center; */
+    }
+    .headings{
+        font-size: 18px;
+    }
+    .grid-1{
+        margin:0 0 0 auto;
+        /* border: 2px solid; */
+        display: grid;
+        
+    }
+    .project-1{
+        grid-column: 1/5;
+        display: block;
+    }
+    .flex{
+        margin-inline: 4em;
+        /* border: 2px solid; */
+        width: 50%;
+        width: min(50% 800px);
+        /* max-width:800px ; */
+    }
+    .flex-1{
+        font-size: 15px;
+        /* border: 2px solid; */
+    }
+    .project-2{
+        /* border: 2px solid; */
+        grid-column:5/9;
+        display: block;
+        /* margin: auto; */
+    }
+    .project-3{
+        grid-column:4/7;
+        /* border: 2px solid; */
+        display: block;
+    }
+
+    /* showcase-2 */
+    .grid-11{
+        margin: auto;
+    }
+
+    /* newslatter */
+
+    #newslatter{
+
+    }
+    .button-1,.button-2,.button-3,.flare{
+        /* padding-inline-end:7em; */
+        width: 100%;
+
+    }
+    .button-3{
+        padding-block-end:3em ;
+    }
+
+    /* footer */
+
+    #footer{
+        border: 2px solid ;
+    }
+    .foot{
+        display: grid;
+        grid-template-columns: repeat(8,1fr);
+    }
+    .class-1{
+        border: 2px solid;
+        grid-column: 1/3;
+    }
+    .class-1 .on{
+        margin: auto;
+        font-size: 20px;
+
+    }
+    .class-2{
+        justify-content: center;
+        align-items: center;
+        grid-column: 3/7;
+        width:min(50%,800px);
+        height: 50%;
+        overflow: none;
+        height: min(100%,800px);
+    }
+    .class-3{
+        grid-column: 7/9;
+        border: 2px solid;
+        margin-left: ;
+        margin: auto;
+        overflow-y: hidden;
+    }
+    .class-3 .first,.second{
+        width: min(25%,900px);
+    }
+
+}
