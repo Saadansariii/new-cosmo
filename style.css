@@ -270,7 +270,7 @@ a:hover{
     grid-column: 8/10;
 }
 .class-3 .first,.second{
-    border: 1px solid;
+    /* border: 1px solid; */
     width: min(42%,400px);
 }
 .first{
@@ -388,14 +388,15 @@ a:hover{
 
     #footer{
         border: 2px solid ;
+        
     }
     .foot{
-        display: grid;
-        grid-template-columns: repeat(8,1fr);
+        /* display: grid; */
+        /* grid-template-columns: repeat(8,1fr); */
     }
     .class-1{
         border: 2px solid;
-        grid-column: 1/3;
+        /* grid-column: 1/3; */
     }
     .class-1 .on{
         margin: auto;
@@ -403,23 +404,13 @@ a:hover{
 
     }
     .class-2{
-        justify-content: center;
-        align-items: center;
-        grid-column: 3/7;
-        width:min(50%,800px);
-        height: 50%;
-        overflow: none;
-        height: min(100%,800px);
+        margin-bottom: 2em;
     }
     .class-3{
-        grid-column: 7/9;
         border: 2px solid;
-        margin-left: ;
-        margin: auto;
-        overflow-y: hidden;
     }
     .class-3 .first,.second{
-        width: min(25%,900px);
+        
     }
 
 }
